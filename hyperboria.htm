@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="style.css" />
+<title>Public Meshnet Information</title>
+</head>
+
+<body>
+    <div id="page">
+		
+        <div id="header">
+        	<h1>Public Meshnet Information</h1>
+            <h2>Instructions on how to connect to the resources provided by this node operator</h2>
+      </div>
+  <div id="bar">
+        	<div class="link"><a href="./index.htm">Home</a></div>
+            <div class="link"><a href="./hyperboria.htm">Hyperboria</a></div>
+            <div class="link"><a href="./freenet.htm">Freenet</a></div>
+            <div class="link"><a href="./tor.htm">Tor</a></div>
+			<div class="link"><a href="./bittorrent.htm">Bittorrent</a></div>
+			<div class="link"><a href="./kademlia.htm">Kademlia</a></div>
+      </div>
+        <div class="contentTitle"><h1>Instructions for connecting to Hyperboria</h1></div>
+        <div class="contentText">
+			<p>On your linux or OSX based system, install the CJDNS software using the instructions at this page <a href="https://github.com/cjdelisle/cjdns">CJDNS at Github</a></p>
+			<p>Edit your cjdroute.conf file to include my node:</p>
+			<pre>// Nodes to connect to.
+"connectTo":
+{
+    //friend_1 (IPv4: 0.1.2.3; IPv6 fcaa:5bac:66e4:713:cb00:e446:c317:fc39)
+    "0.1.2.3:45678":
+    {
+        "password": "thisIsNotARealConnection_1",
+        "publicKey": "thisIsJustForAnExampleDoNotUseThisInYourConfFile_1.k"
+    }
+}
+</pre>
+        </div>  
+</div>
+<div id="footer"></div>
+</body>
+</html>
